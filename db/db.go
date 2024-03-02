@@ -15,7 +15,7 @@ type DataBase interface {
 	Create_table(string, []string, []reflect.Type)
 }
 
-func (db DB) Create_table(name string, colums_name []string, colums_type []string) {
+func (db *DB) Create_table(name string, colums_name []string, colums_type []string) {
 	len_n := len(colums_name)
 	len_t := len(colums_type)
 	Types := utils.ToType(colums_type)
