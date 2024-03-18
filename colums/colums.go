@@ -10,3 +10,7 @@ type Colum struct {
 type colum_append interface {
 	Append_content(any)
 }
+
+func (c *Colum)Append_content(sty any){
+	
+}
